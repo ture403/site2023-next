@@ -1,0 +1,47 @@
+.port__human {
+    .port__human__wrap {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+
+        .imgWrap {
+            width: 30%;
+            border: 2px solid #000;
+            margin: 0 auto;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .textWrap {
+            display: flex;
+            justify-content: space-between;
+            width: 60%;
+
+            margin: 100px 0;
+
+            .title {
+                width: 30%;
+                border-right: 2px solid rgb(113, 113, 114);
+                padding: 10px;
+
+                h3 {
+                    font-size: 3em;
+                }
+
+                span {
+                    display: block;
+                    margin-top: 50px;
+                    font-size: 2em;
+                }
+            }
+
+            .desc {
+                width: 73%;
+                padding: 30px;
+                word-wrap: keep-all;
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+.unsplash__slider {
+    padding-bottom: 100px;
+
+    img {
+        margin: auto;
+        height: 300px;
+        object-fit: cover;
+    }
+}
+
+//unsplash__page
+.Unsplash__cont {
+    ul {
+        column-count: 3;
+
+        li {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+// unsplash__search 
+.unsplash__search {
+    margin-bottom: 50px;
+    text-align: center;
+
+    input {
+        border: 1px solid #e8ecf2;
+        font-size: 16px;
+        padding: 10px 20px;
+        border-radius: 50px;
+        min-width: 300px;
+        margin-right: 10px;
+        font-family: 'aria';
+    }
+
+    button {
+        display: inline-block;
+        padding: 10px 50px;
+        background-color: #f7100d;
+        color: #fff;
+        border: 0;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        border-radius: 50px;
+
+        &:hover {
+            background-color: darken(#f7100d, 20%);
+        }
+    }
+
+}
+
+.unsplash__tag {
+    ul {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        margin-bottom: 50px;
+
+        li {
+            a {
+                border: 1px solid #e8ecf2;
+                padding: 10px 20px;
+                margin: 0 10px;
+                color: #f7100d;
+            }
+        }
+    }
+}

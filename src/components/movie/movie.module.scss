@@ -1,0 +1,107 @@
+.movie__slider {
+    .swiper {
+        padding: 20px 0 50px;
+    }
+}
+
+//movie__cont 
+.movie__cont {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        li {
+            width: 23.333%;
+            margin-bottom: 2%;
+            margin-bottom: 10px;
+            position: relative;
+
+            .title {
+                font-size: 20px;
+                display: inline-block;
+                padding: 3px 0;
+
+                &:hover {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                }
+            }
+
+            .star {
+                position: absolute;
+                right: 20px;
+                top: 20px;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                background-color: #fff;
+                text-align: center;
+                border-radius: 50%;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+//movie__search
+.movie__search {
+    margin-bottom: 50px;
+    text-align: center;
+
+    input {
+        border: 1px solid #e8ecf2;
+        font-size: 16px;
+        padding: 10px 20px;
+        border-radius: 50px;
+        min-width: 300px;
+        margin-right: 10px;
+        font-family: 'aria';
+    }
+
+    button {
+        display: inline-block;
+        padding: 10px 50px;
+        background-color: #f7100d;
+        color: #fff;
+        border: 0;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: darken(#f7100d, 20%);
+        }
+    }
+}
+
+.movie__tag {
+    ul {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        margin-bottom: 50px;
+
+        li {
+            button {
+                display: inline-block;
+                border: 1px solid #4857ec;
+                padding: 5px 20px;
+                margin: 0 10px;
+                color: #4857ec;
+                cursor: pointer;
+                background-color: transparent;
+
+                &:hover {
+                    background-color: #4857ec;
+                    color: #fff;
+                }
+            }
+        }
+
+        li.active button {
+            background-color: #4857ec;
+            color: #fff;
+        }
+    }
+}
