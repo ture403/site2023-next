@@ -36,10 +36,4 @@ const MoviePage = () => {
   );
 };
 
-export async function getStaticProps() {
-  return {
-    props: {}, // You can pass initial props here if required
-  };
-}
-
 export default MoviePage;
