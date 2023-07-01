@@ -1,8 +1,9 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import styles from "./page.module.scss";
 import MovieCont from "@/components/movie/MovieCont";
 import ContTitle from "@/components/titile/ContTitle";
+import MovieSlider from "@/components/movie/MovieSlider";
+import MovieTag from "@/components/movie/MovieTag";
 
 const MoviePage = () => {
   const [images, setImages] = useState([]);
@@ -26,6 +27,8 @@ const MoviePage = () => {
   return (
     <>
       <ContTitle title="movie" />
+      <MovieSlider images={images} />
+      <MovieTag Tag={search} />
       <MovieCont images={images} />
     </>
   );

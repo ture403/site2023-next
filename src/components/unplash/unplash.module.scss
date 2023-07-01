@@ -1,7 +1,7 @@
 .unsplash__slider {
     padding-bottom: 100px;
 
-    img {
+    .img {
         margin: auto;
         height: 300px;
         object-fit: cover;
@@ -59,13 +59,14 @@
         margin-top: 100px;
         margin-bottom: 50px;
 
-        li {
-            a {
-                border: 1px solid #e8ecf2;
-                padding: 10px 20px;
-                margin: 0 10px;
-                color: #f7100d;
-            }
+        button {
+            border: 1px solid #e8ecf2;
+            padding: 10px 20px;
+            margin: 0 10px;
+            color: #f7100d;
+            background-color: transparent;
+            cursor: pointer;
         }
+
     }
 }

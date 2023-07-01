@@ -1,6 +1,9 @@
 "use client";
 import ContTitle from "@/components/titile/ContTitle";
 import UnsplashCont from "@/components/unplash/UnsplashCont";
+import UnsplashSlider from "@/components/unplash/UnsplashSlider";
+import UnsplashTag from "@/components/unplash/UnsplashTag";
+import UnsplashSearch from "@/components/unplash/UnsplashSearch";
 import React, { useEffect, useState } from "react";
 
 const UnsplashPage = () => {
@@ -38,6 +41,9 @@ const UnsplashPage = () => {
   return (
     <>
       <ContTitle title="unsplash" />
+      <UnsplashSlider images={images} />
+      <UnsplashSearch onSearch={search} />
+      <UnsplashTag Tag={search} />
       <UnsplashCont images={images} />
     </>
   );
